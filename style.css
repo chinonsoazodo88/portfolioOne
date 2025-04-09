@@ -20,7 +20,7 @@ body.dark-mode header{
     border-bottom: 1px solid hsl(13, 31%, 94%);
 }
 
-.genLayout{
+.genLayout , #aboutLayout , #serviceLayout , #projectLayout{
     max-width: 1100px;
     margin: auto;
 }
@@ -145,6 +145,19 @@ nav{
 .profile{
     display: flex;
     justify-content: space-between;
+}
+
+.profilePic{
+   width: 21rem;
+   height: 18rem;
+   border-radius: 25px;
+}
+
+.profilePic > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
 }
 
 .designer{
@@ -419,11 +432,6 @@ body.dark-mode .designOne > a{
     color: #000;
   }
 
-  .contact{
-    display: flex;
-    margin-block: 0;
-  }
-
   .contacts{
     display: flex;
     align-items: center;
@@ -440,17 +448,26 @@ body.dark-mode .designOne > a{
     border: none;
   }
 
-  .contacts > a{
+  .contact{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: .4rem 6rem;
-    color: #000;
+    margin-bottom: 1rem;
   }
 
-  body.dark-mode .contacts > a{
+  .contact > p{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    /* padding: .4rem 6rem; */
     color: hsl(13, 31%, 94%);
+  }
+
+  body.dark-mode .contact > p{
+    color: #000;
   }
 
   .copyright{
@@ -473,13 +490,13 @@ body.dark-mode .designOne > a{
     color: #000;
   }
 
-  @media(min-width: 260px) and (max-width: 420px){
+  @media(min-width: 260px) and (max-width: 430px){
     .hamburger{
         display: block;
         font-size: 1.3rem;
     }
 
-    .genLayout{
+    .genLayout , #aboutLayout , #serviceLayout , #projectLayout{
         max-width: 330px;
     }
 
@@ -584,7 +601,7 @@ body.dark-mode .designOne > a{
     }
 
     .aboutImg{
-        margin-left: 4rem;
+        margin-left: 3rem;
     }
 
     .aboutCont > h3{
@@ -632,20 +649,20 @@ body.dark-mode .designOne > a{
 
     .letsTalk > h1{
         font-size: 40px;
+        margin-bottom: 1rem;
     }
 
-    .contact{
-       flex-direction: column;
-    }
-
-    .contacts{
-        margin: 1rem;
-    }
-
-    .contacts > a{
+      .contact{
+        width: 330px;
         display: flex;
-        gap: 1rem;
-        padding: .3rem 4rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .contact > p{
+        font-size: 12px;
       }
 
       .copyright{
@@ -654,6 +671,7 @@ body.dark-mode .designOne > a{
 
       .copyright > p{
         width: 330px;
+        font-size: 14px;
         text-align: center;
       }
   }
