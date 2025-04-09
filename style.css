@@ -500,6 +500,10 @@ body.dark-mode .designOne > a{
         max-width: 330px;
     }
 
+    nav{
+        padding-block: 1rem;
+    }
+
     .navLeft h1{
         font-size: 14px;
     }
@@ -569,25 +573,43 @@ body.dark-mode .designOne > a{
     }
 
     .designer{
-        margin: 0rem auto 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
     }
     
     .profile{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         margin-top: 1rem;
     }
 
     .passion{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem auto 1rem;
         margin: 1rem auto;
         width: 330px;
         gap: 8rem;
     }
 
+    .passion > h3 , .passionCont > h3 , .aboutCont > h3{
+        text-align: center;
+    }
+
+    .aboutUs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .aboutUs > h1{
         font-size: 35px;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 
     .about{
@@ -597,11 +619,14 @@ body.dark-mode .designOne > a{
     }
 
     .aboutCont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 300px;
     }
 
     .aboutImg{
-        margin-left: 3rem;
+        margin: 0;
     }
 
     .aboutCont > h3{
@@ -621,7 +646,7 @@ body.dark-mode .designOne > a{
         text-align: center;
         font-size: 35px;
         margin: auto;
-        margin-bottom: 1rem;
+        margin-block: 2rem;
     }
 
     .proImg{
@@ -639,12 +664,16 @@ body.dark-mode .designOne > a{
 
     .services > h1{
         font-size: 35px;
-        margin: 1rem 0;
+        margin: 2rem 0;
     }
 
     .services > p{
-        font-size: 13px;
+        font-size: 14px;
         width: 330px;
+    }
+
+    footer{
+        padding-top: 1rem;
     }
 
     .letsTalk > h1{
